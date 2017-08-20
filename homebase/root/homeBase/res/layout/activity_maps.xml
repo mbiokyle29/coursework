@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/save_house_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".7"
+            android:textColor="#FFFFFF"
+            android:text="Save House"/>
+
+        <!--
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Save House Location"
+        android:id="@id/newhouse_newhouse_button"
+        bootstrapbutton:bb_roundedCorners="true"
+        bootstrapbutton:bb_size="default"
+        bootstrapbutton:bb_type="primary"
+        bootstrapbutton:bb_text_alignment="center"
+        bootstrapbutton:bb_icon_right="fa-chevron-right"
+        android:onClick="onSubmitHouseClick"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+        -->
+    </RelativeLayout>
+
+</FrameLayout>

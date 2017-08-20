@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="login_signup_button" type="id"></item>
+    <item name="login_login_button" type="id"/>
+    <item name="login_username_etext" type="id"/>
+    <item name="login_password_etext" type="id"/>
+    <item name="login_test_button" type="id"/>
+
+    <item name="signup_username_etext" type="id"/>
+    <item name="signup_email_etext" type="id"/>
+    <item name="signup_password_etext" type="id"/>
+    <item name="signup_passwordV_etext" type="id"/>
+    <item name="signup_progressbar" type="id"/>
+    <item name="signup_signup_button" type="id"/>
+
+    <item name="chores_choreContainer_button" type="id"/>
+    <item name="alertContainer_header" type="id"/>
+    <item name="alertContainer_container" type="id"/>
+    <item name="chores_allFilter_button" type="id"/>
+    <item name="chore_info_header_button" type="id"/>
+    <item name="chore_info_body_button" type="id"/>
+    <item name="chore_info_creator_field" type="id"/>
+    <item name="chore_info_container_button" type="id"/>
+    <item name="chore_info_responsible_container" type="id"/>
+    <item name="choreInfo_confirm_button" type="id"/>
+    <item name="choreInfo_cancel_button" type="id"/>
+
+    <item name="chore_create_header_field" type="id"/>
+    <item name="chore_create_body_field" type="id"/>
+    <item name="chore_create_responsible_container" type="id"/>
+    <item name="chore_create_creator_field" type="id"/>
+
+    <item name="userSelection_template_container" type="id"/>
+    <item name="userSelection_button" type="id"/>
+
+    <item name="bills_billContainer_button" type="id"/>
+    <item name="bills_allFilter_button" type="id"/>
+
+    <item name="billCreate_responsible_container" type="id"/>
+    <item name="billCreate_body_field" type="id"/>
+    <item name="billCreate_creator_field" type="id"/>
+    <item name="billCreate_header_field" type="id"/>
+    <item name="billCreate_dollars_field" type="id"/>
+    <item name="billCreate_cents_field" type="id"/>
+
+    <item name="bill_info_header_button" type="id"/>
+    <item name="bill_info_body_button" type="id"/>
+    <item name="bill_info_container_button" type="id"/>
+    <item name="bill_container_button" type="id"/>
+    <item name="billInfo_amount_field" type="id"/>
+    <item name="billInfo_creator_field" type="id"/>
+    <item name="billInfo_cancel_button" type="id"/>
+    <item name="billInfo_confirm_button" type="id"/>
+    <item name="billInfo_responsible_container" type="id"/>
+
+    <item name="GPSuser_container" type="id"/>
+    <item name="GPSuser_location_button" type="id"/>
+    <item name="GPStracker_template_button" type="id"/>
+    <item name="GPStracker_template_icon" type="id"/>
+    <item name="GPStracker_template_header" type="id"/>
+
+    <item name="map" type="id"/>
+    <item name="locinfo" type="id"/>
+    <item name="save_house_button" type="id"/>
+    <item name="save_house_text" type="id"/>
+
+    <item name="newsfeed_menu_container" type="id"/>
+    <item name="newsfeed_newsfeedItem_container" type="id"/>
+    <item name="newsfeed_template_button" type="id"/>
+    <item name="newsfeed_template_button_header" type="id"/>
+
+    <item name="newhouse_code_etext" type="id"/>
+    <item name="newhouse_newhouse_text" type="id"/>
+    <item name="newhouse_newhouse_button" type="id"/>
+    <item name="newhouse_join_button" type="id"/>
+    <item name="newhouse_joinhouse_text" type="id"/>
+    <item name="newhouse_joinhouse_etext" type="id"/>
+    <item name="newhouse_name_etext" type="id"/>
+    <item name="newhouse_address_etext" type="id"/>
+    <item name="newhouse_city_etext" type="id"/>
+    <item name="newhouse_state_etext" type="id"/>
+    <item name="newhouse_zipcode_etext" type="id"/>
+
+    <item name="settings_username_et" type="id"/>
+    <item name="settings_email_et" type="id"/>
+
+    <item name="supply_allFilter_button" type="id"/>
+    <item name="supply_supplyContainer_button" type="id"/>
+    <item name="supplyContainer_header" type="id"/>
+    <item name="supplyContainer_button" type="id"/>
+    <item name="supplyCreate_header_field" type="id"/>
+    <item name="supplyContainer_container" type="id"/>
+    <item name="supplyCreate_body_field" type="id"/>
+    <item name="supplyCreate_creator_field" type="id"/>
+    <item name="supply_info_header_button" type="id"/>
+    <item name="supply_info_body_button" type="id"/>
+    <item name="supply_info_creator_field" type="id"/>
+    <item name="supply_info_responsible_container" type="id" />
+    <item name="supplyInfo_confirm_button" type="id" />
+    <item name="supplyInfo_cancel_button" type="id" />
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:fontFamily="fontawesome-webfont.ttf"
+    >
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:text="This is a newsfeed item!"
+        android:textAlignment="center"
+        bootstrapbutton:bb_roundedCorners="false"
+        bootstrapbutton:bb_size="default"
+        bootstrapbutton:bb_type="gray"
+        bootstrapbutton:bb_text_alignment="center"
+        android:enabled="false"
+        android:id="@id/GPStracker_template_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_marginBottom="4dp"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="top"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:text="TITLE"
+                android:textAlignment="center"
+                bootstrapbutton:bb_roundedCorners="false"
+                bootstrapbutton:bb_size="small"
+                bootstrapbutton:bb_type="chore"
+                bootstrapbutton:bb_text_alignment="center"
+                android:enabled="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@id/GPStracker_template_header"
+                >
+
+            </com.beardedhen.androidbootstrap.BootstrapButton>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="0dp">
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="0dp">
+                    <com.beardedhen.androidbootstrap.FontAwesomeText
+                        android:id="@id/GPStracker_template_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        fontawesometext:fa_icon="fa-home"
+                        android:layout_margin="10dp"
+                        android:textSize="24sp"
+                        android:textColor="@color/bbutton_success"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.beardedhen.androidbootstrap.BootstrapButton>
+</LinearLayout>

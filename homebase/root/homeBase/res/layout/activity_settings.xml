@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    tools:context="...app.android.homeBase.SettingsActivity"
+    android:background="@drawable/background"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="64dp">
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/settings_settings"
+                android:id="@+id/textView"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="26dp"></RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small">
+
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    android:textColor="@color/black"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/settings_username_et"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small">
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_change_username"
+                    bootstrapbutton:bb_roundedCorners="true"
+                    bootstrapbutton:bb_size="default"
+                    bootstrapbutton:bb_type="primary"
+                    bootstrapbutton:bb_text_alignment="center"
+                    bootstrapbutton:bb_icon_right="fa-chevron-right"
+                    android:onClick="onChangeUsernameClick"
+                    android:layout_centerHorizontal="true">
+                </com.beardedhen.androidbootstrap.BootstrapButton>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small">
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    android:textColor="@color/black"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/settings_email_et"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small">
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_change_email"
+                    bootstrapbutton:bb_roundedCorners="true"
+                    bootstrapbutton:bb_size="default"
+                    bootstrapbutton:bb_type="primary"
+                    bootstrapbutton:bb_text_alignment="center"
+                    bootstrapbutton:bb_icon_right="fa-chevron-right"
+                    android:onClick="onChangeEmailClick"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true">
+                </com.beardedhen.androidbootstrap.BootstrapButton>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small">
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_log_out"
+                    bootstrapbutton:bb_roundedCorners="true"
+                    bootstrapbutton:bb_size="default"
+                    bootstrapbutton:bb_type="warning"
+                    bootstrapbutton:bb_text_alignment="center"
+                    bootstrapbutton:bb_icon_right="fa-chevron-right"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onLogoutClick"
+                    >
+                </com.beardedhen.androidbootstrap.BootstrapButton>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small">
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_delete_account"
+                    bootstrapbutton:bb_roundedCorners="true"
+                    bootstrapbutton:bb_size="default"
+                    bootstrapbutton:bb_type="danger"
+                    bootstrapbutton:bb_text_alignment="center"
+                    bootstrapbutton:bb_icon_right="fa-chevron-right"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="onDeleteAccountClick"
+                    >
+                </com.beardedhen.androidbootstrap.BootstrapButton>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small">
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New House Anchor"
+                    bootstrapbutton:bb_roundedCorners="true"
+                    bootstrapbutton:bb_size="default"
+                    bootstrapbutton:bb_type="danger"
+                    bootstrapbutton:bb_text_alignment="center"
+                    bootstrapbutton:bb_icon_right="fa-chevron-right"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="updateHouseLocation"
+                    >
+                </com.beardedhen.androidbootstrap.BootstrapButton>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

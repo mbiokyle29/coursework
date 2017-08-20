@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:fontFamily="fontawesome-webfont.ttf">
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        bootstrapbutton:bb_roundedCorners="false"
+        bootstrapbutton:bb_size="default"
+        bootstrapbutton:bb_type="gray"
+        android:enabled="false"
+        android:text="text"
+        bootstrapbutton:bb_text_alignment="center"
+        android:id="@id/supplyContainer_container"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+                android:text="text"
+                android:layout_marginBottom="4dp"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="top"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:textAlignment="center"
+                bootstrapbutton:bb_roundedCorners="false"
+                bootstrapbutton:bb_size="small"
+                bootstrapbutton:bb_type="success"
+                bootstrapbutton:bb_text_alignment="center"
+                android:enabled="false"
+                android:id="@id/supplyContainer_header"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <RelativeLayout
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="27dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right">
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    bootstrapbutton:bb_roundedCorners="false"
+                    bootstrapbutton:bb_size="small"
+                    bootstrapbutton:bb_type="supply"
+                    bootstrapbutton:bb_text_alignment="center"
+                    bootstrapbutton:bb_icon_left="fa-check"
+                    android:enabled="true"
+                    android:id="@id/supplyContainer_button"
+                    android:onClick="onSupplyObtained"/>
+            </RelativeLayout>
+
+        </com.beardedhen.androidbootstrap.BootstrapButton>
+
+
+
+</LinearLayout>

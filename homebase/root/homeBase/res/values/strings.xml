@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">homeBase</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_signup_text">Sign Up</string>
+    <string name="login_login_text">Login</string>
+    <string name="login_test_text">Newsfeed</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_passwordVer_hint">Password Again</string>
+    <string name="signup_signup_button">Sign Up</string>
+    <string name="chores_viewActive_button">Active</string>
+    <string name="chores_viewClosed_button">Completed</string>
+    <string name="chores_viewMine_button">Mine</string>
+    <string name="chores_add_button">Add</string>
+    <string name="bills_viewActive_button">Active</string>
+    <string name="bills_viewClosed_button">Completed</string>
+    <string name="bills_viewMine_button">Mine</string>
+    <string name="bills_add_button">Add</string>
+
+    <string name="newsfeed_showMenu_button">Modules</string>
+    <string name="newsfeed_gotoChores_button">Chores</string>
+    <string name="newsfeed_gotoGPS_button">Track HouseMates</string>
+    <string name="newsfeed_gotoBills_button">Bills</string>
+    <string name="newsfeed_gotoSupplies_button">Supplies</string>
+
+    <string name="newhouse_code_hint">House Name</string>
+    <string name="newhouse_newhouse_text">Register your House</string>
+    <string name="newhouse_newhouse_button">Register</string>
+    <string name="newhouse_joinhouse_button">Join</string>
+    <string name="newhouse_joinhouse_text">Join an existing House</string>
+    <string name="newhouse_joinhouse_hint">Admin Username</string>
+    <string name="newhouse_name_hint">House Name</string>
+    <string name="newhouse_address_hint">Address</string>
+    <string name="newhouse_city_hint">City</string>
+    <string name="newhouse_state_hint">State</string>
+    <string name="newhouse_zipcode_hint">Zipcode</string>
+    <string name="title_activity_activity_gps">ActivityGPS</string>
+
+    <string name="settings_change_username">Change Username</string>
+    <string name="settings_change_email">Change Email</string>
+    <string name="settings_log_out">Logout</string>
+    <string name="settings_delete_account">Delete Account</string>
+    <string name="settings_settings">Settings</string>
+
+    <string name="supply_viewActive_button">Active</string>
+    <string name="supply_viewClosed_button">Completed</string>
+    <string name="supply_viewMine_button">Mine</string>
+    <string name="supply_add_button">Add</string>
+    <string name="supply_title_hint">Item</string>
+    <string name="supply_desc_hint">Description</string>
+
+    <string name="created_by">Created By:</string>
+    <string name="owned_by">Owner By:</string>
+    <string name="creator">Creator</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+
+
+</resources>

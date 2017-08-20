@@ -1,0 +1,16 @@
+Player 1: 23
+Player 2: 46
+Player 1: 2
+Player 2: 48
+Player 1: 24
+Player 2: 12
+Player 1: 36
+Player 2: 18
+Player 1: 6
+Player 2: 42
+Player 1: 21
+Player 2: 7
+Player 1: 49
+Player 2: 1
+Player 1: 47
+Winner: Player 1

@@ -1,0 +1,10 @@
+//This data set is derived from the Nursery data set
+// first column is the class label, others are categorical attributes
+%%,0,1
+##,A1,1,2,3
+##,A2,1,2,3
+##,A3,1,2
+##,A4,1,2,3
+##,A5,1,2,3
+0,3,1,1,1,1
+1,1,1,1,1,1

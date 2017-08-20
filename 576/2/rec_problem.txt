@@ -1,0 +1,52 @@
+./partition.py --string ACTTTT
+a: -2, b: 2, c: -1
+The max partition had score 6:
+A|C|TTTT
+
+./partition.py --string ACTTTTC
+a: -2, b: 2, c: -1
+The max partition had score 6:
+A|C|TTTT|C
+
+./partition.py --string ACTTTTCT
+a: -2, b: 2, c: -1
+The max partition had score 7:
+A|C|TTTTCT
+
+The addition of another C causes a large change in the partition layout,
+we drop the partition added with ACTTTTC
+
+If we are thinking prefixes:
+ACTTTTC  --> best is A|C|TTTT|C
+ACTTTTCT --> best is A|C|TTTTCT
+
+I dont know how we enumerate all the possible partitions within the matrix!
+
+for A: 
+    there are 4 labels so 4 possibilitites
+
+for AA:
+    there are two partitions:
+    AA  --> 4 labels
+    A|A --> 4*3 labels
+
+for AAA:
+    there are 
+    AAA   --> 4
+    A|A|A --> 4*3*3
+    A|AA  --> 4*3
+    AA|A  --> 4*3
+
+for AAAA:
+    
+    A|A|A|A = 4*3*3*3
+    
+    A|AA|A
+    A|A|AA  = 4*3*3
+    AA|A|A  = 4*3*3
+
+    A|AAA   = 
+    AA|AA   =
+    AAA|A   =
+
+    AAAA

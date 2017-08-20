@@ -1,0 +1,56 @@
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    83                                               @profile
+    84                                               def assemble(self):
+    85                                           
+    86         1            3      3.0      0.0          next_edge = None
+    87      1813       891008    491.5     63.9          while not self.is_connected():
+    88                                           
+    89      1812       156592     86.4     11.2              next_edge = self.potential_edges.pop(0)
+    90                                           
+    91      1812       342640    189.1     24.6              if self.addable_edge(next_edge):
+    92       399          612      1.5      0.0                  next_edge.source.out_edges.append(next_edge)
+    93       399          434      1.1      0.0                  next_edge.sink.in_edges.append(next_edge)
+    94                                           
+    95                                                   # find the path
+    96         1            2      2.0      0.0          path = []
+    97         1          151    151.0      0.0          start = filter(lambda node: len(node.in_edges) == 0, self.nodes)
+    98                                                   
+    99         1            1      1.0      0.0          if(len(start) != 1):
+   100                                                       raise SystemExit("Multiple start nodes")
+   101                                           
+   102         1            1      1.0      0.0          start = start[0]
+   103         1            1      1.0      0.0          path.append(start.val)
+   104                                           
+   105       400          364      0.9      0.0          while len(start.out_edges) != 0:
+   106       399          394      1.0      0.0              edge = start.out_edges.pop()
+   107       399          324      0.8      0.0              next_node = edge.sink
+   108       399          499      1.3      0.0              path.append(next_node.val[-edge.score:])
+   109       399          304      0.8      0.0              start = next_node
+   110                                           
+   111         1           16     16.0      0.0          return "".join(path)
+
+Total time: 37.8766 s
+File: lib/models.py
+Function: overlap at line 141
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+   141                                               @profile
+   142                                               def overlap(self, source_node, sink_node):
+   143                                               
+   144                                                   # I think the idea here is:
+   145                                                   # if the first letter of string a is
+   146                                                   # the first letter of string we have a sub
+   147                                                   # recurse some how
+   148    159600       103565      0.6      0.3          sink_str = sink_node.val
+   149    159600        80432      0.5      0.2          source_str = source_node.val
+   150                                           
+   151    159600        70987      0.4      0.2          overlap = 0
+   152  15933733      7175437      0.5     18.9          for n in range(1, len(source_str)):
+   153  15826395      8393879      0.5     22.2              suffix = source_str[n:]
+   154  15826395     21905514      1.4     57.8              if string.find(sink_str, suffix, 0, len(suffix)) != -1:
+   155     52262        31130      0.6      0.1                  overlap = -len(suffix)
+   156     52262        45006      0.9      0.1                  break
+   157                                           
+   158    159600        70682      0.4      0.2          return overlap
